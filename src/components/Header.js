@@ -1,70 +1,135 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import flyme from '../image/flyme.png';
+import homepageimage from '../image/homepageimage.jpg';
+
 const Header = () => {
     return (
-        <div className="relative">
-            <header className="mx-auto flex bg-indigo-800 py-0.1">
-                <img src={flyme} alt="" />
-                <Link to="/">
-                    <p className="text-white m-4 text-2xl cursor-pointer pr-60">
-                        FlyMe
-                    </p>
-                </Link>
-                <main classname=''>
-                    <ul
-                        className="flex justify-end 
-                         "
+        <div>
+            <nav className="border-white px-2 sm:px-4 py-2.5 bg-gradient-to-r from-blue-400 to-cyan-900">
+                <div className="container flex flex-wrap justify-between items-center mx-auto">
+                    <a href="/" className="flex items-center">
+                        <img
+                            src={flyme}
+                            className="mr-3 h-6 sm:h-9"
+                            alt="Flyme"
+                        />
+                        <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+                            FlyMe
+                        </span>
+                    </a>
+                    <button
+                        data-collapse-toggle="mobile-menu"
+                        type="button"
+                        className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-blue-300 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-controls="mobile-menu"
+                        aria-expanded="false"
                     >
-                        <li
-                            clasname="
-                        "
+                        <span className="sr-only">Open main menu</span>
+                        <svg
+                            className="w-6 h-6"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"
                         >
-                            <Link
-                            classname=''
-                            to="/">
-                                <p className="text-white hover:underline underline-offset-8 text-2xl
-                        cursor-pointer m-4">Home</p>
-                            </Link>
-                        </li>
-                        <li>
-                            {' '}
-                            <Link to="/offer">
-                                <p  className="text-white hover:underline underline-offset-8 text-2xl
-                        cursor-pointer m-4">Offer</p>
-                            </Link>
-                        </li>
-                        <li>
-                            {' '}
-                            <Link to="/about">
-                                <p  className="text-white hover:underline underline-offset-8 text-2xl
-                        cursor-pointer m-4">About</p>
-                            </Link>
-                        </li>
-                        <li>
-                            {' '}
-                            <Link to="/booking">
-                                <p  className="text-white hover:underline underline-offset-8 text-2xl
-                        cursor-pointer m-4">Booking</p>
-                            </Link>
-                        </li>
-                        <li>
-                            {' '}
-                            <Link to="/contact">
-                                <p  className="text-white hover:underline underline-offset-8 text-2xl
-                        cursor-pointer m-4">Contact</p>
-                            </Link>
-                        </li>
-                        <li>
-                            {' '}
-                            <Link to="/login">
-                                <p  className="text-white hover:underline underline-offset-8 text-2xl
-                        cursor-pointer m-4">Login</p>
-                            </Link>
-                        </li>
-                    </ul>
-                </main>
-            </header>
+                            <path
+                                fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"
+                            ></path>
+                        </svg>
+                        <svg
+                            className="hidden w-6 h-6"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"
+                            ></path>
+                        </svg>
+                    </button>
+                    <div
+                        className="hidden w-full md:block md:w-auto"
+                        id="mobile-menu"
+                    >
+                        <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+                            <li>
+                                <a
+                                    href="/"
+                                    className="block py-2 pr-4 pl-3 text-white bg-white text-xl rounded md:bg-transparent md:text-white md:p-0 dark:text-white"
+                                    aria-current="page"
+                                >
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="/offer"
+                                    className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 text-xl dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                                >
+                                    Offer
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="/about"
+                                    className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 text-xl dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                                >
+                                    About
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="/booking"
+                                    className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 text-xl dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                                >
+                                    Booking
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="/login"
+                                    className="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 text-xl md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                                >
+                                    Login
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <section className="dashboard-wrapper">
+                <div className="">
+                    <img
+                        className="absolute"
+                        src={homepageimage}
+                        alt="homepage"
+                    />
+                    <p className="relative text-2xl top-24 text-white border-2 border-white rounded-3xl h-6/12 w-2/5
+                    p-10">
+                        <span className='text-5xl text-blue-300'>Flyme!</span>
+                        <br />
+                        
+                        Where The Journey Begins! Wherever you go, go with all
+                        your heart. Traveling, you realize that differences are
+                        lost: each city takes to resembling all cities, places
+                        exchange their form, order, distances, a shapeless dust
+                        cloud invades the continents. IbnuTravel Travel is the
+                        movement of people between distant geographical
+                        locations. Travel can be done by foot, bicycle,
+                        automobile, train, boat, bus, airplane, ship or other
+                        means, with or without luggage, and can be one way or
+                        round trip.
+                        <br />
+                        <button className='border-2 border-blue-300 rounded-lg p-3 mt-3 '>
+                            See Offers
+                        </button>
+                    </p>
+                </div>
+            </section>
         </div>
     );
 };
