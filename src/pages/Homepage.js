@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from '../components/Header';
+import Dashboard from '../components/Dashboard';
 
 const Homepage = () => {
     return (
         <div>
-            <Header />
+            <Dashboard/>
         </div>
     );
 };

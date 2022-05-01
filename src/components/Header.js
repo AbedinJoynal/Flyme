@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import flyme from '../image/flyme.png';
-import homepageimage from '../image/homepageimage.jpg';
+
 
 const Header = () => {
     return (
@@ -101,35 +100,6 @@ const Header = () => {
                     </div>
                 </div>
             </nav>
-            <section className="dashboard-wrapper">
-                <div className="">
-                    <img
-                        className="absolute"
-                        src={homepageimage}
-                        alt="homepage"
-                    />
-                    <p className="relative text-2xl top-24 text-white border-2 border-white rounded-3xl h-6/12 w-2/5
-                    p-10">
-                        <span className='text-5xl text-blue-300'>Flyme!</span>
-                        <br />
-                        
-                        Where The Journey Begins! Wherever you go, go with all
-                        your heart. Traveling, you realize that differences are
-                        lost: each city takes to resembling all cities, places
-                        exchange their form, order, distances, a shapeless dust
-                        cloud invades the continents. IbnuTravel Travel is the
-                        movement of people between distant geographical
-                        locations. Travel can be done by foot, bicycle,
-                        automobile, train, boat, bus, airplane, ship or other
-                        means, with or without luggage, and can be one way or
-                        round trip.
-                        <br />
-                        <button className='border-2 border-blue-300 rounded-lg p-3 mt-3 '>
-                            See Offers
-                        </button>
-                    </p>
-                </div>
-            </section>
         </div>
     );
 };

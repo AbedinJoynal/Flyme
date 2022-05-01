@@ -5,10 +5,12 @@ import Homepage from './pages/Homepage';
 import Bookingpage from './pages/Bookingpage';
 import Loginpage from './pages/Loginpage';
 import Offerpage from './pages/Offerpage';
+import Header from './components/Header';
 const App = () => {
     return (
         <>
             <Router>
+                <Header/>
                 <Routes>
                     <Route exact path="/" element={<Homepage />} />
                 </Routes>
