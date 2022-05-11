@@ -37,9 +37,9 @@ const Dashboard = () => {
             </section>
             <section className="aboutus">
                 <div className="flex">
-                    <img src={explorationimage} className='flex h-2/4 mt-20' alt="" />
-                    <p className='mt-40 text-2xl pt-35'>
-                        <span className='text-purple-700 text-3xl'>
+                    <img src={explorationimage} className='flex h-97 mt-20' alt="" />
+                    <p className='mt-40 text-2xl pt-36'>
+                        <span className='text-purple-700 text-3xl font-semibold'>
                             Fly Anywhere With FlyMe
                         </span>
                         <br />

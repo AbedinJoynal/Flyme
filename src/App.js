@@ -6,26 +6,28 @@ import Bookingpage from './pages/Bookingpage';
 import Loginpage from './pages/Loginpage';
 import Offerpage from './pages/Offerpage';
 import Header from './components/Header';
+import PrivateRoute from './components/PrivateRoute';
+import Footer from './components/Footer';
 const App = () => {
     return (
         <>
             <Router>
-                <Header/>
+                <Header />
+
                 <Routes>
                     <Route exact path="/" element={<Homepage />} />
-                </Routes>
-                <Routes>
                     <Route exact path="/offer" element={<Offerpage />} />
-                </Routes>
-                <Routes>
                     <Route exact path="/about" element={<Aboutpage />} />
-                </Routes>
-                <Routes>
-                    <Route exact path="/booking" element={<Bookingpage />} />
-                </Routes>
-                <Routes>
                     <Route exact path="/login" element={<Loginpage />} />
+                    <Route exact path="/booking" element={<PrivateRoute />}>
+                        <Route
+                            exact
+                            path="/booking"
+                            element={<Bookingpage />}
+                        />
+                    </Route>
                 </Routes>
+                <Footer />
             </Router>
         </>
     );
