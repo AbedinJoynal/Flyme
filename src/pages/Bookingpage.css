@@ -13,6 +13,7 @@
 }
 /* left part */
 .contact-form-left {
+    margin-left:1rem;
     padding-top: 40px;
     display: flex;
     flex-direction: column;
@@ -23,6 +24,7 @@
 }
 .contact-form-left input {
     padding-left: 20px;
+    
     width: 12rem;
 }
 /* right image part */
@@ -35,12 +37,14 @@
 /* form button */
 .form-btn {
     text-align: center;
-    padding: 20px 0;
+    padding: 30px 0;
+    margin-left: -22px;
 }
 .form-btn button {
     background: rgb(84, 156, 205);
     padding: 10px 30px;
     border: none;
+    
     border-radius: 5px;
     transition: 0.5s;
     color: rgb(255, 255, 255);
