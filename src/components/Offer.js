@@ -10,12 +10,12 @@ import { Link } from 'react-router-dom';
 const Offer = () => {
     const onOffer = () => {};
     return (
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center mt-20">
             <img src={offerlogo} alt="" className="h-32 w-38" />
-            <p className="text-3xl mr-2 text-purple-700 pt-3 font-semibold">
+            <p className="text-3xl mr-2 text-blue-500  pt-3 font-semibold">
                 Our Offers
             </p>
-            <p className="text-xl pt-3">
+            <p className="text-xl text-blue-900 pt-3">
                 All available Offers Package you can review from here. Click on
                 Book now Button and know details of each.
             </p>
@@ -29,7 +29,7 @@ const Offer = () => {
                         <br />
                         <button
                             onClick={onOffer}
-                            className="text-white bg-purple-700 rounded p-2 text-base hover:text-lg"
+                            className="text-white bg-blue-400 rounded p-2 text-base hover:text-lg"
                         >
                             <Link to="/offer">Book Now</Link>
                         </button>
@@ -45,7 +45,7 @@ const Offer = () => {
                         <br />
                         <button
                             onClick={onOffer}
-                            className="text-white bg-purple-700 rounded p-2 text-base hover:text-lg"
+                            className="text-white bg-blue-400 rounded p-2 text-base hover:text-lg"
                         >
                             <Link to="/offer">Book Now</Link>
                         </button>
@@ -61,7 +61,7 @@ const Offer = () => {
                         <br />
                         <button
                             onClick={onOffer}
-                            className="text-white bg-purple-700 rounded p-2 text-base hover:text-lg"
+                            className="text-white bg-blue-400 rounded p-2 text-base hover:text-lg"
                         >
                             <Link to="/offer">Book Now</Link>
                         </button>
@@ -77,7 +77,7 @@ const Offer = () => {
                         <br />
                         <button
                             onClick={onOffer}
-                            className="text-white bg-purple-700 rounded p-2 text-base hover:text-lg"
+                            className="text-white bg-blue-400 rounded p-2 text-base hover:text-lg"
                         >
                             <Link to="/offer">Book Now</Link>
                         </button>
@@ -92,7 +92,7 @@ const Offer = () => {
                         <br />
                         <button
                             onClick={onOffer}
-                            className="text-white bg-purple-700 rounded p-2 text-base hover:text-lg"
+                            className="text-white bg-blue-400 rounded p-2 text-base hover:text-lg"
                         >
                             <Link to="/offer">Book Now</Link>
                         </button>
@@ -108,7 +108,7 @@ const Offer = () => {
                         <br />
                         <button
                             onClick={onOffer}
-                            className="text-white bg-purple-700 rounded p-2 text-base hover:text-lg"
+                            className="text-white bg-blue-400 rounded p-2 text-base hover:text-lg"
                         >
                             <Link to="/offer">Book Now</Link>
                         </button>

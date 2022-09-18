@@ -12,12 +12,10 @@ const Offerpage = () => {
     }
   return (
       <div className="flex flex-col justify-center items-center bg-gray-200">
-    <p className="text-6xl mr-2 text-purple-700 pt-3 font-semibold">
+    <p className="text-6xl mr-2 text-blue-700 py-20 font-semibold">
        All Our Offers
     </p>
-    <p className="text-2xl pt-9">
-        Book Now Before The Time Runs Out.
-    </p>
+   
     <div className="grid grid-cols-3 gap-8 pt-10 px-4">
         <div>
             <img src={australia} alt="" />
@@ -28,7 +26,7 @@ const Offerpage = () => {
                 <br />
                 <button
                     onClick={onOffer}
-                    className="text-white bg-purple-700 rounded p-2 text-base hover:text-lg"
+                    className="text-white bg-blue-400 rounded p-2 text-base hover:text-lg"
                 >
                     <Link to="/login">Book Now</Link>
                 </button>
@@ -44,7 +42,7 @@ const Offerpage = () => {
                 <br />
                 <button
                     onClick={onOffer}
-                    className="text-white bg-purple-700 rounded p-2 text-base hover:text-lg"
+                    className="text-white bg-blue-400 rounded p-2 text-base hover:text-lg"
                 >
                     <Link to="/login">Book Now</Link>
                 </button>
@@ -60,7 +58,7 @@ const Offerpage = () => {
                 <br />
                 <button
                     onClick={onOffer}
-                    className="text-white bg-purple-700 rounded p-2 text-base hover:text-lg"
+                    className="text-white bg-blue-400 rounded p-2 text-base hover:text-lg"
                 >
                     <Link to="/login">Book Now</Link>
                 </button>
@@ -76,7 +74,7 @@ const Offerpage = () => {
                 <br />
                 <button
                     onClick={onOffer}
-                    className="text-white bg-purple-700 rounded p-2 text-base hover:text-lg"
+                    className="text-white bg-blue-400 rounded p-2 text-base hover:text-lg"
                 >
                     <Link to="/login">Book Now</Link>
                 </button>
@@ -91,7 +89,7 @@ const Offerpage = () => {
                 <br />
                 <button
                     onClick={onOffer}
-                    className="text-white bg-purple-700 rounded p-2 text-base hover:text-lg"
+                    className="text-white bg-blue-400 rounded p-2 text-base hover:text-lg"
                 >
                     <Link to="/login">Book Now</Link>
                 </button>
@@ -107,7 +105,7 @@ const Offerpage = () => {
                 <br />
                 <button
                     onClick={onOffer}
-                    className="text-white bg-purple-700 rounded p-2 text-base hover:text-lg"
+                    className="text-white bg-blue-400 rounded p-2 text-base hover:text-lg"
                 >
                     <Link to="/login">Book Now</Link>
                 </button>

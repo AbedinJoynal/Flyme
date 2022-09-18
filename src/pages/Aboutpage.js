@@ -1,10 +1,10 @@
 import React from 'react';
-import Dashboard from '../components/Dashboard';
+
 const Aboutpage = () => {
     return (
         <div>
-            <p className="text-2xl p-5">
-                 <span className="text-6xl mt-5 text-purple-700 flex items-center justify-center pb-9">About Us</span>
+            <p className="text-2xl py-20 px-32">
+                 <span className="text-6xl mt-10 text-blue-700 flex items-center justify-center pb-9 font-medium">About Us</span>
                  <br />
                  Serendipitously, after saving up every penny that we had, we both
             set off on a life-changing solo backpacking trip and met each other
